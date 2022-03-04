@@ -76,7 +76,7 @@ module {
     public func append(msgs: [A]) {
        for (msg in msgs.vals()) {
          s.bucket := List.push(msg, s.bucket);
-         s.num_of_lines := s.num_of_lines + 1;
+         s.num_of_lines := s.num_of_lines + 1;  
          if (s.num_of_lines >= BUCKET_SIZE) {
             roll_over()
          }
